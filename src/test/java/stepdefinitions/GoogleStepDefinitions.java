@@ -9,7 +9,7 @@ import pages.GooglePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class GoogleStepDefinitions {
+public class GoogleStepDefinitions {   // Her site icin farkli StepDefinitions class'i olusturulur
 
     GooglePage googlePage = new GooglePage();
     @Given("kullanici google gider")
@@ -56,7 +56,6 @@ public class GoogleStepDefinitions {
     public void sonuclarin_icerdigini_dogrular(String string) {
         Assert.assertTrue(Driver.getDriver().getPageSource().contains(string));
     }
-
 
 
 }
