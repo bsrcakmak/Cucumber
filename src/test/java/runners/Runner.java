@@ -14,7 +14,9 @@ import org.junit.runner.RunWith;
         },
         monochrome=true, // raporlarin consol'da okunakli bir sekilde cikmasi icin
         features = "./src/test/resources/features", // features folder path
-        glue = "stepdefinitions", //stepdefinitions path
+        glue = {
+                "stepdefinitions",  //stepdefinitions path
+                "hooks"},
         tags = "@data_tables",
         dryRun = false   // dryRun kolayliktir
 
