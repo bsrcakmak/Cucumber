@@ -15,8 +15,10 @@ import org.junit.runner.RunWith;
         monochrome=true, // raporlarin consol'da okunakli bir sekilde cikmasi icin
         features = "./src/test/resources/features", // features folder path
         glue = "stepdefinitions", //stepdefinitions path
-        tags = "@personel_olusturma",
+        tags = "@data_tables",
         dryRun = false   // dryRun kolayliktir
+
+
         // dryRun= true da browser acilmaz sadece eksik kod var mi ona bakar,
         //         gecmeyen adim var mi diye hizli bir kontroldur
         // dryRun= false da dryRun yokmus gibi normal sekilde calisir,
