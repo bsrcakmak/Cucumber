@@ -76,6 +76,10 @@ Feature: ilk feature file
 
     NOTE: Data Tables ve Scenario Outline birlikte kullanilabilir
 
+    -------------------------------
+
+    EXCEL
+    Login objelerimiz olusturulmus durumda excel dosyasinda
 
 
 
