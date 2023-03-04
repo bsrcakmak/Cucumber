@@ -5,16 +5,17 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-                "pretty",//raporlarin daha ikunakli olmasi icin
+                "pretty",  //raporlarin daha okunakli olmasi icin
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failed-scenarios.txt"
         },
-        monochrome = true,//raporlarin consoleda okunakli sekilde cikmasi icin
-        features = "./src/test/resources/features",//features folder path
+        monochrome = true,  //raporlarin consoleda okunakli sekilde cikmasi icin
+        features = "./src/test/resources/features", //features folder path
         glue = {"stepdefinitions","hooks"},   //stepdefinitions path
-        tags = "@excel_automation",
-        dryRun = true
+        tags = "@failed_scenario",
+        dryRun = false
 )
 
         // dryRun= true da browser acilmaz sadece eksik kod var mi ona bakar,

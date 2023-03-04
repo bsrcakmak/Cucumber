@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fb07ca4-7111-4462-b6f1-cd822cb56324" name="Changes" comment="cucumber">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ExcelUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day06_excel_automation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/mysmoketestdata.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/FailedRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/RegressionTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/NOTES" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/NOTES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day03_parametre_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day03_parametre_feature_file.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day03_scenario_outline_1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day03_scenario_outline_1.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day04_scenario_outline_2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day04_scenario_outline_2.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day06_excel_automation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day06_excel_automation.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/batch103Cucumber/src/test/resources/testdata",
-    "settings.editor.selected.configurable": "Errors"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -66,26 +71,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\batch103Cucumber\src\test\resources\testdata" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Scenario: TC01_google_iphone_arama" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ilkfeaturefile.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="batch103Cucumber" />
-      <option name="NAME_FILTER" value="^TC01_google_iphone_arama$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_google_iphone_arama$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01_google_iphone_arama" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FailedRunner">
     <configuration name="Scenario: TC01_musteri_giris_testi" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day05_data_tables.feature" />
@@ -146,6 +132,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FailedRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="batch103Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.FailedRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="batch103Cucumber" />
       <extension name="coverage">
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FailedRunner" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: TC01_musteri_giris_testi" />
         <item itemvalue="Cucumber Java.Scenario: TC01_personel_olustur" />
         <item itemvalue="Cucumber Java.Scenario: TC02_google_tesla_arama" />
-        <item itemvalue="Cucumber Java.Scenario: TC01_google_iphone_arama" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677872819112</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cucumber">
+      <created>1677876681012</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677876681012</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
