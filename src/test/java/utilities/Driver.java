@@ -28,6 +28,9 @@ public class Driver {
     }
     //to initialize the driver we create a static method
     public static WebDriver getDriver() {
+
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
+
         //create the driver if and only if it is null
         if (driver == null) {
             String browser = ConfigReader.getProperty("browser");
